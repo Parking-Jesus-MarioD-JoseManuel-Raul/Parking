@@ -1,4 +1,4 @@
-package Controller;
+package vista;
 
 public class a {
 
