@@ -2,13 +2,20 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class Abonado extends Cliente {
-    Bono bono;
+public class Esporadico extends Cliente {
+
     Estacionamiento datosEstacionamiento;
 
-    public Abonado(Identificador identificador, String matricula, String payMethod, Bono bono, Estacionamiento datosEstacionamiento) {
+    public Esporadico(Identificador identificador, String matricula, String payMethod, Estacionamiento datosEstacionamiento) {
         super(identificador, matricula, payMethod);
-        this.bono = bono;
+        this.datosEstacionamiento = datosEstacionamiento;
+    }
+
+    public Estacionamiento getDatosEstacionamiento() {
+        return datosEstacionamiento;
+    }
+
+    public void setDatosEstacionamiento(Estacionamiento datosEstacionamiento) {
         this.datosEstacionamiento = datosEstacionamiento;
     }
 
@@ -24,11 +31,14 @@ public class Abonado extends Cliente {
         return getDatosEstacionamiento().getIdPlaza();
     }
 
+    public Esporadico(Identificador identificador, String matricula, String payMethod) {
+        super(identificador, matricula, payMethod);
+    }
+
     @Override
     public Identificador getIdentificador() {
         return super.getIdentificador();
     }
-
 
     @Override
     public void setIdentificador(Identificador identificador) {
@@ -53,22 +63,6 @@ public class Abonado extends Cliente {
     @Override
     public void setPayMethod(String payMethod) {
         super.setPayMethod(payMethod);
-    }
-
-    public Bono getBono() {
-        return bono;
-    }
-
-    public void setBono(Bono bono) {
-        this.bono = bono;
-    }
-
-    public Estacionamiento getDatosEstacionamiento() {
-        return datosEstacionamiento;
-    }
-
-    public void setDatosEstacionamiento(Estacionamiento datosEstacionamiento) {
-        this.datosEstacionamiento = datosEstacionamiento;
     }
 
 }

@@ -1,5 +1,4 @@
 package objectMother;
 
-public class a {
-
+public class SocioOM {
 }
