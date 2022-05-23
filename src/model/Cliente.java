@@ -34,4 +34,9 @@ public class Cliente {
     public void setPayMethod(String payMethod) {
         this.payMethod = payMethod;
     }
+
+    @Override
+    public String toString() {
+        return "identificador=" + identificador + ", matricula='" + matricula + '\'' + ", payMethod='" + payMethod;
+    }
 }
