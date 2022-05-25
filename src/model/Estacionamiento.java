@@ -6,12 +6,12 @@ import java.time.LocalDateTime;
 public class Estacionamiento {
     LocalDateTime horaEntrada;
     LocalDateTime horaSalida;
-    Plaza plazaParking;
 
-    public Estacionamiento(LocalDateTime horaEntrada, LocalDateTime horaSalida, Plaza plazaParking) {
+
+    public Estacionamiento(LocalDateTime horaEntrada, LocalDateTime horaSalida) {
         this.horaEntrada = horaEntrada;
         this.horaSalida = horaSalida;
-        this.plazaParking = plazaParking;
+
     }
 
     public LocalDateTime getHoraEntrada() {
@@ -30,12 +30,6 @@ public class Estacionamiento {
         this.horaSalida = horaSalida;
     }
 
-    public int getIdPlaza() {
-        return plazaParking.getIdPlaza();
-    }
 
-    public void setOcupado(boolean ocupado) {
-        plazaParking.setOcupado(true);
-    }
 
 }
