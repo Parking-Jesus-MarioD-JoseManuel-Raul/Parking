@@ -20,9 +20,6 @@ public class Abonado extends Cliente {
         return getDatosEstacionamiento().getHoraSalida();
     }
 
-    public int getIdPlaza() {
-        return getDatosEstacionamiento().getIdPlaza();
-    }
 
     @Override
     public Identificador getIdentificador() {
