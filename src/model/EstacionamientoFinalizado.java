@@ -1,13 +1,12 @@
 package model;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class EstacionamientoFinalizado {
     private Estacionamiento datosEstacionamiento;
-    private LocalDateTime horaSalida;
+    private LocalTime horaSalida;
 
-    public EstacionamientoFinalizado(Estacionamiento datosEstacionamiento, LocalDateTime horaSalida) {
+    public EstacionamientoFinalizado(Estacionamiento datosEstacionamiento, LocalTime horaSalida) {
         this.datosEstacionamiento = datosEstacionamiento;
         this.horaSalida = horaSalida;
     }
@@ -28,7 +27,7 @@ public class EstacionamientoFinalizado {
         return datosEstacionamiento.getMatricula();
     }
 
-    public void setHoraSalida(LocalDateTime horaSalida) {
+    public void setHoraSalida(LocalTime horaSalida) {
         this.horaSalida = horaSalida;
     }
 }
