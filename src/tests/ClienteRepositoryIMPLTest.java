@@ -16,7 +16,7 @@ public class ClienteRepositoryIMPLTest {
      */
     @Test
     public void testGetClientes() {
-
+    	
     }
 
     /**
