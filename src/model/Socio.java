@@ -12,18 +12,9 @@ public class Socio extends Cliente {
         return plazaSocio;
     }
 
-    public void setPlazaSocio(Plaza plazaSocio) {
-        this.plazaSocio = plazaSocio;
-    }
-
     @Override
     public Identificador getIdentificador() {
         return super.getIdentificador();
-    }
-
-    @Override
-    public void setIdentificador(Identificador identificador) {
-        super.setIdentificador(identificador);
     }
 
     @Override
@@ -46,16 +37,12 @@ public class Socio extends Cliente {
         super.setPayMethod(payMethod);
     }
 
-    public int getIdPlaza() {
-        return plazaSocio.getIdPlaza();
-    }
-
-    public void setIdPlaza(int idPlaza) {
-        plazaSocio.setIdPlaza(idPlaza);
-    }
-
     public void setOcupado() {
         plazaSocio.setOcupado(true);
+    }
+
+    public int getNumeroPlaza() {
+        return plazaSocio.getNumeroPlaza();
     }
 
     public void setNumeroPlaza(int numeroPlaza) {

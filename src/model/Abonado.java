@@ -16,10 +16,6 @@ public class Abonado extends Cliente {
         return getDatosEstacionamiento().getHoraEntrada();
     }
 
-    public LocalDateTime getHoraSalida() {
-        return getDatosEstacionamiento().getHoraSalida();
-    }
-
 
     @Override
     public Identificador getIdentificador() {

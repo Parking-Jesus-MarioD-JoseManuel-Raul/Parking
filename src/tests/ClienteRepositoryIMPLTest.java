@@ -1,7 +1,6 @@
 package tests;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * ClienteRepositoryIMPL Tester.
@@ -10,16 +9,13 @@ import org.junit.jupiter.api.Test;
  * @version 1.0
  * @since <pre>jun. 1, 2022</pre>
  */
-@DisplayName("Cliente Repository IMPL Test")
-class ClienteRepositoryIMPLTest {
-
+public class ClienteRepositoryIMPLTest {
 
     /**
      * Method: getClientes(String identificador)
      */
     @Test
-    @DisplayName("Test Get Clientes")
-    void testGetClientes() {
+    public void testGetClientes() {
 
     }
 
@@ -27,8 +23,31 @@ class ClienteRepositoryIMPLTest {
      * Method: IdentifyByMatricula(String matricula)
      */
     @Test
-    @DisplayName("Test Identify By Matricula")
-    void testIdentifyByMatricula() {
+    public void testIdentifyByMatricula() {
 
     }
-}
+
+    /**
+     * Method: genrarEstacionamiento(String matricula)
+     */
+    @Test
+    public void testGenrarEstacionamiento() {
+
+    }
+
+    /**
+     * Method: pagarEstacionamiento(String metodoPago)
+     */
+    @Test
+    public void testPagarEstacionamiento() {
+
+    }
+
+    /**
+     * Method: finalizarEstacionamiento(String matricula)
+     */
+    @Test
+    public void testFinalizarEstacionamiento() {
+
+    }
+} 

@@ -4,7 +4,7 @@ import controllers.IdentifyByMatriculaController;
 import model.Cliente;
 import repositories.ClienteRpository;
 
-public class iIdentifyByMatriculaIMPL implements IdentifyByMatriculaController {
+public class IdentifyByMatriculaIMPL implements IdentifyByMatriculaController {
     private ClienteRpository clienteRpository;
 
     @Override
