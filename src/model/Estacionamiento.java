@@ -1,13 +1,13 @@
 package model;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 public class Estacionamiento {
-    private LocalTime horaEntrada;
+    private LocalDateTime horaEntrada;
     private String matricula;
     private boolean statusEstacionamiento;
 
-    public Estacionamiento(LocalTime horaEntrada, String matricula) {
+    public Estacionamiento(LocalDateTime horaEntrada, String matricula) {
         this.horaEntrada = horaEntrada;
         this.matricula = matricula;
         this.statusEstacionamiento = getStatusEstacionamiento();
@@ -21,7 +21,7 @@ public class Estacionamiento {
         this.statusEstacionamiento = statusEstacionamiento;
     }
 
-    public LocalTime getHoraEntrada() {
+    public LocalDateTime getHoraEntrada() {
         return horaEntrada;
     }
 
