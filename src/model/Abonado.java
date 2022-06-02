@@ -1,6 +1,6 @@
 package model;
 
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class Abonado extends Cliente {
     Bono bono;
@@ -12,7 +12,7 @@ public class Abonado extends Cliente {
         this.datosEstacionamiento = datosEstacionamiento;
     }
 
-    public LocalDateTime getHoraEntrada() {
+    public LocalTime getHoraEntrada() {
         return getDatosEstacionamiento().getHoraEntrada();
     }
 

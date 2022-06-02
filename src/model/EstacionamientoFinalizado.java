@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class EstacionamientoFinalizado {
     private Estacionamiento datosEstacionamiento;
@@ -19,7 +20,7 @@ public class EstacionamientoFinalizado {
         datosEstacionamiento.setStatusEstacionamiento(statusEstacionamiento);
     }
 
-    public LocalDateTime getHoraEntrada() {
+    public LocalTime getHoraEntrada() {
         return datosEstacionamiento.getHoraEntrada();
     }
 
