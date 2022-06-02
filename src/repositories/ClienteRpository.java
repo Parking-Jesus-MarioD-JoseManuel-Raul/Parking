@@ -16,7 +16,6 @@ public interface ClienteRpository {
      * @return Lista de clientes que coincidan con el identificador introducido;
      */
     public ArrayList<Cliente> getClientes(String identificador);
-
     /**
      * Este metodo de identificar por matrícula buscará en la lista de clientes un cliente
      * culla matrícula coincida con la matrícula introducida por parametro.
@@ -26,6 +25,7 @@ public interface ClienteRpository {
      * @param matricula; Matrícula introducida para realizar la búsqueda
      * @return Obejto de tipo Socio culla matricula coincida con la intorucida por parametro;
      */
+    
     public Cliente IdentifyByMatricula(String matricula);
 
     /**
