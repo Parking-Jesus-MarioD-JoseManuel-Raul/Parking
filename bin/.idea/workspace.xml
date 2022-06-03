@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba6ceb2-8440-4d1a-99de-c41e9e46604c" name="Changes" comment="Creacion del controlador de cliente y metodos del mismo, construccion de la carpeta de testing">
-      <change afterPath="$PROJECT_DIR$/src/controllers/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/GenerarEstacionamientoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllersIMPL/ClienteControllerIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllersIMPL/GenerarEstacionamientoControllerIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/EstacionamientoFinalizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/EstacionamientoFinalizadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositoriesIMPL/AbonadoRepositoryIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositoriesIMPL/PlazaRepositoryIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositoriesIMPL/SocioRepositoryIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/AbonadoRepositoryIMPLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/PlazaRepositoryIMPLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/SocioRepositoryIMPLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllersIMPL/iIdentifyByMatriculaIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllersIMPL/IdentifyByMatriculaIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Abonado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Abonado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Bono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Bono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Estacionamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Estacionamiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Socio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/AbonadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/AbonadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/ClienteRpository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/ClienteRpository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/EstacionamientoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/EstacionamientoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/PlazaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/PlazaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/SocioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/SocioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositoriesIMPL/ClienteRepositoryIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositoriesIMPL/ClienteRepositoryIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ClienteRepositoryIMPLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ClienteRepositoryIMPLTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="fba6ceb2-8440-4d1a-99de-c41e9e46604c" name="Changes" comment="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,10 +20,13 @@
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -289,7 +266,70 @@
       <option name="project" value="LOCAL" />
       <updated>1654081161412</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Repositorio Estacionamientos y Testing suit de los actores">
+      <created>1654164001352</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654164001352</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Repositorio Estacionamientos y Testing suit de los actores">
+      <created>1654164292445</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654164292445</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Modificacion de Modelo de Estacionamientos">
+      <created>1654185683468</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1654185683468</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modificacion de Modelo de Estacionamientos">
+      <created>1654186037519</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1654186037519</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Correccion Variables de tiempo">
+      <created>1654191338347</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1654191338347</updated>
+    </task>
+    <task id="LOCAL-00022" summary="EstacionamientoRepositoryIMPL">
+      <created>1654255198938</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1654255198938</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)">
+      <created>1654262737228</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262737228</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)">
+      <created>1654262774507</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262774507</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)">
+      <created>1654262811247</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1654262811247</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +406,12 @@
     <MESSAGE value="Correccion estructura del proyecto" />
     <MESSAGE value="Eliminar Esporadico" />
     <MESSAGE value="Creacion del controlador de cliente y metodos del mismo, construccion de la carpeta de testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion del controlador de cliente y metodos del mismo, construccion de la carpeta de testing" />
+    <MESSAGE value="Repositorio Estacionamientos y Testing suit de los actores" />
+    <MESSAGE value="Modificacion de Modelo de Estacionamientos" />
+    <MESSAGE value="Correccion Variables de tiempo" />
+    <MESSAGE value="EstacionamientoRepositoryIMPL" />
+    <MESSAGE value="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
