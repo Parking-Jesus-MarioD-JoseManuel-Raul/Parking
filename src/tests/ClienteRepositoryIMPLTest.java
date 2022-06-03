@@ -27,15 +27,15 @@ public class ClienteRepositoryIMPLTest {
     @Test
     public void testGetClientes() {
     	ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
-    	List<Cliente> spected = ClienteOM.getSocios();
+    	List<Cliente> spected = ClienteOM.getClientes();
     	List<Cliente> result = clientes.getClientes("Bono_Socio");
     	assertEquals(spected, result );
     	
-    	List<Cliente> spected2 = ClienteOM.getEsporadicos();
+    	List<Cliente> spected2 = ClienteOM.getClientes();
     	List<Cliente> result2 = clientes.getClientes("Bono_Socio");
     	assertNotEquals(spected2, result2 );
     	
-    	List<Cliente> spected3 = ClienteOM.getAbonados();
+    	List<Cliente> spected3 = ClienteOM.getClientes();
     	List<Cliente> result3 = clientes.getClientes("Plastico");
     	assertEquals(spected3, result3 );
     }
