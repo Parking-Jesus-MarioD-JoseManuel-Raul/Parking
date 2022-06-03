@@ -1,18 +1,17 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
-import java.util.List;
-
-import org.junit.Test;
-
 import model.Cliente;
 import model.Identificador;
 import objectMother.AbonadoOM;
 import objectMother.ClienteOM;
 import objectMother.SocioOM;
+import org.junit.Test;
 import repositoriesIMPL.ClienteRepositoryIMPL;
+
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
  * ClienteRepositoryIMPL Tester.
@@ -28,23 +27,23 @@ public class ClienteRepositoryIMPLTest {
      */
     @Test
     public void testGetClientes() {
-    	ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
-    	
-    	List<Cliente> spected = SocioOM.getSocios();
-    	List<Cliente> result = clientes.getClientes("Bono_Socio");
-    	assertEquals(spected, result );
-    	
-    	List<Cliente> spected2 = ClienteOM.getClientes();
-    	List<Cliente> result2 = clientes.getClientes("Bono_Socio");
-    	assertNotEquals(spected2, result2 );
-    	
-    	List<Cliente> spected3 = AbonadoOM.getAbonadoss();
-    	List<Cliente> result3 = clientes.getClientes("Plastico");
-    	assertEquals(spected3, result3 );
-    	
-    	List<Cliente> spected4 = ClienteOM.getClientes();
-    	List<Cliente> result4 = clientes.getClientes("Carton");
-    	assertEquals(spected4, result4);
+        ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
+
+        List<Cliente> espectedSocios = SocioOM.getSocios();
+        List<Cliente> result = clientes.getClientes("Bono_Socio");
+        assertEquals(espectedSocios, result);
+
+        List<Cliente> espactedNotEquals = ClienteOM.getClientes();
+        List<Cliente> result2 = clientes.getClientes("Bono_Socio");
+        assertNotEquals(espactedNotEquals, result2);
+
+        List<Cliente> espectedAbonados = AbonadoOM.getAbonados();
+        List<Cliente> result3 = clientes.getClientes("Plastico");
+        assertEquals(espectedAbonados, result3);
+
+        List<Cliente> espectedNotEqualsAB = ClienteOM.getClientes();
+        List<Cliente> result4 = clientes.getClientes("Carton");
+        assertEquals(espectedNotEqualsAB, result4);
     }
 
     /**
