@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * SocioRepositoryIMPL Tester.
  *
- * @author <Jesus Macarro>
+ * @author <Raúl Durán>
  * @version 1.0
  * @since <pre>jun. 1, 2022</pre>
  */

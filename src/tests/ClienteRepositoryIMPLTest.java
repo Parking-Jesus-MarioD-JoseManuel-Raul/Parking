@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 /**
  * ClienteRepositoryIMPL Tester.
  *
- * @author <Jesus Macarro>
+ * @author <Mario Durán>
  * @version 1.0
  * @since <pre>jun. 1, 2022</pre>
  */

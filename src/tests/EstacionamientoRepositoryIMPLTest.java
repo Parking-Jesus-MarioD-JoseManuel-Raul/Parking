@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * EstacionamientoRepositoryIMPL Tester.
  *
- * @author <Jesus Macarro>
+ * @author <Jose Manuel Vera>
  * @version 1.0
  * @since <pre>jun. 3, 2022</pre>
  */

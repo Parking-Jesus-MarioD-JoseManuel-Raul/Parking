@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * AbonadoRepositoryIMPL Tester.
  *
- * @author <Jesus Macarro>
+ * @author <Jesús Macarro>
  * @version 1.0
  * @since <pre>jun. 1, 2022</pre>
  */
