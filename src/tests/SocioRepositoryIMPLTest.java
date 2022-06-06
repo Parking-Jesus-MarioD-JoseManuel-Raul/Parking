@@ -1,39 +1,61 @@
 package tests;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+import org.junit.Ignore;
 import org.junit.Test;
+
+import model.Identificador;
+import model.Plaza;
+import model.Socio;
+import repositoriesIMPL.SocioRepositoryIMPL;
 
 /**
  * SocioRepositoryIMPL Tester.
  *
- * @author <RaÃºl DurÃ¡n>
+ * @author <Raúl Durán>
  * @version 1.0
- * @since <pre>jun. 1, 2022</pre>
+ * @since
+ * 
+ *        <pre>
+ * jun. 1, 2022
+ *        </pre>
  */
 public class SocioRepositoryIMPLTest {
 
+	/**
+	 * Method: findSociobyMatricula(String matricula)
+	 */
+	@Test
+	public void testFindSociobyMatricula() {
+		SocioRepositoryIMPL socios = new SocioRepositoryIMPL();
+		Plaza plaza = new Plaza(007,true,22);
 
-    /**
-     * Method: findSociobyMatricula(String matricula)
-     */
-    @Test
-    public void testFindSociobyMatricula() {
+		Socio spected = new Socio(Identificador.Bono_Socio, "123MNW", "83715326", plaza);
+		Socio result = socios.findSociobyMatricula("123MNW");
+		assertEquals(spected, result);
+
+		Socio spectedErr = new Socio(Identificador.Bono_Socio, "123MNW", "83715326", plaza);
+		Socio resultErr = socios.findSociobyMatricula("873NNN");
+		assertNotEquals(spectedErr, resultErr);
+	}
+
+	/**
+	 * Method: darseDeBajaSocio()
+	 */
+	@Ignore
+	public void testDarseDeBajaSocio() {
+
+		
+	}
+
+	/**
+	 * Method: modificarDatosSocio()
+	 */
+	@Ignore
+	public void testModificarDatosSocio() {
 //TODO: Test goes here... 
-    }
+	}
 
-    /**
-     * Method: darseDeBajaSocio()
-     */
-    @Test
-    public void testDarseDeBajaSocio() {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: modificarDatosSocio()
-     */
-    @Test
-    public void testModificarDatosSocio() {
-//TODO: Test goes here... 
-    }
-
-} 
+}
