@@ -29,7 +29,7 @@ public class ClienteRepositoryIMPLTest {
     /**
      * Method: getClientes(String identificador)
      */
-    @Test
+    @Ignore
     public void testGetClientes() {
         ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
 
@@ -44,7 +44,8 @@ public class ClienteRepositoryIMPLTest {
         List<Cliente> espectedAbonados = AbonadoOM.getAbonados();
         List<Cliente> result3 = clientes.getClientes("Plastico");
         assertEquals(espectedAbonados, result3);
-
+        
+        //||||||||||||||||||||SUJETO A REVISION||||||||||||||||||||||
         List<Cliente> espectedNotEqualsAB = ClienteOM.getClientes();
         List<Cliente> result4 = clientes.getClientes("Carton");
         assertEquals(espectedNotEqualsAB, result4);
@@ -53,17 +54,17 @@ public class ClienteRepositoryIMPLTest {
     /**
      * Method: IdentifyByMatricula(String matricula)
      */
-    @Ignore
+    @Test
     public void testIdentifyByMatricula() {
     	ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
     	
     	Cliente spected = new Cliente(Identificador.Bono_Socio, "124HYT", "012741902392" );
-    	Cliente result = clientes.IdentifyByMatricula("012741902392");
+    	Cliente result = clientes.IdentifyByMatricula("124HYT");
     	assertEquals(spected, result );
     	
     	Cliente spected2 = new Cliente(Identificador.Bono_Socio, "124HYT", "012741902392" );
-    	Cliente result2 = clientes.IdentifyByMatricula("012741902324");
-    	assertNotEquals(spected, result );
+    	Cliente result2 = clientes.IdentifyByMatricula("012JRE");
+    	assertNotEquals(spected2, result2 );
     }
 
     /**

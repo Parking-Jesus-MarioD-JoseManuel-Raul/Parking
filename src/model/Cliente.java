@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Cliente {
     Identificador identificador;
     String matricula;
@@ -38,5 +40,13 @@ public class Cliente {
     @Override
     public String toString() {
         return "identificador=" + identificador + ", matricula='" + matricula + '\'' + ", payMethod='" + payMethod;
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cliente)) return false;
+        Cliente cliente = (Cliente) o;
+        return Objects.equals(matricula, cliente.matricula);
     }
 }
