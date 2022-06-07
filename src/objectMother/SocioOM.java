@@ -11,9 +11,9 @@ public class SocioOM {
 		Identificador[] identificator = { Identificador.Bono_Socio, Identificador.Bono_Socio,
 				Identificador.Bono_Socio };
 
-		String[] plate = { "124HYT", "842YRO", "942UER" };
+		String[] plate = { "123MNW", "842YRO", "942UER" };
 
-		String[] payMethod = { "012741902392", "012364812334", "235212561346" };
+		String[] payMethod = { "83715326", "012364812334", "235212561346" };
 
 		ArrayList<Cliente> clientes = new ArrayList<>();
 

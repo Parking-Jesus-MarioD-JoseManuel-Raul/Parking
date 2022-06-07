@@ -14,7 +14,7 @@ public interface SocioRepository {
     /**
      * Este metodo permite al socio darse de baja como socio
      */
-    public void darseDeBajaSocio();
+    public void darseDeBajaSocio(String matricula);
 
     /**
      * Este metodo permite modificar los datos de socio (Solo se podra cambiar su metodo de pago y su matricula)

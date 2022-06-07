@@ -29,6 +29,7 @@ public class SocioRepositoryIMPLTest {
 	 */
 	@Test
 	public void testFindSociobyMatricula() {
+		
 		SocioRepositoryIMPL socios = new SocioRepositoryIMPL();
 		Plaza plaza = new Plaza(007,true,22);
 
