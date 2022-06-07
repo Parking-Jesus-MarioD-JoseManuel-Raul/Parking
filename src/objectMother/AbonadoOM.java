@@ -1,25 +1,21 @@
 package objectMother;
 
-import model.Cliente;
-import model.Identificador;
+import model.*;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 public class AbonadoOM {
-    public static List<Cliente> getAbonados() {
-        Identificador[] identificator = {Identificador.Plastico, Identificador.Plastico, Identificador.Plastico};
-
-        String[] plate = {"123FAE", "OIO125", "031OOD"};
-
-        String[] payMethod = {"123456789014", "124515124124", "098765432135"};
-
-        ArrayList<Cliente> clientes = new ArrayList<>();
-
-        for (int i = 0; i < plate.length; i++) {
-            clientes.add(new Cliente(identificator[i], plate[i], payMethod[i]));
+    public static ArrayList<Abonado> getListaAbonados() {
+        Random random = new Random();
+        ArrayList<Abonado> listaAbonados = new ArrayList<>();
+        ArrayList<Cliente> clientes = ClienteOM.getClientes();
+        ArrayList<Bono> listaBonos = BonoOM.getBonosList();
+        ArrayList<Estacionamiento> estacionamientos = (ArrayList<Estacionamiento>) EstacionamientoOM.getEstacionamiento();
+        for (int i = 0; i < 8; i++) {
+            listaAbonados.add(new Abonado(Identificador.Plastico, clientes.get(i).getMatricula(), clientes.get(i).getPayMethod(), listaBonos.get(random.nextInt(3)), estacionamientos.get(i)));
         }
 
-        return clientes;
+        return listaAbonados;
     }
 }

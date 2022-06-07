@@ -1,6 +1,7 @@
 package repositoriesIMPL;
 
 import model.*;
+import objectMother.AbonadoOM;
 import repositories.AbonadoRepository;
 
 import java.time.LocalDate;
@@ -25,17 +26,25 @@ public class AbonadoRepositoryIMPL implements AbonadoRepository {
             }
             break;
         }
-
+        pagarBono(clienteAbonado.getPayMethod(), clienteAbonado.getBono());
         return clienteAbonado;
     }
 
     @Override
-    public void pagarBono(String metodoPago, Bono Bono) {
+    public void pagarBono(String metodoPago, Bono bono) {
+        bono.setEstadoBonoPagado();
     }
 
     @Override
     public ArrayList<Abonado> getAbonados(String bono) {
-        return null;
+        ArrayList<Abonado> listaAbonados = AbonadoOM.getListaAbonados();
+        ArrayList<Abonado> getAbonadoBono = new ArrayList<>();
+        for (Abonado clienteAbonado : listaAbonados) {
+            if (clienteAbonado.getBono().getNombreBono().equals(bono)) {
+                getAbonadoBono.add(clienteAbonado);
+            }
+        }
+        return getAbonadoBono;
     }
 
     @Override

@@ -8,12 +8,14 @@ public class Bono {
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private Double precio;
+    private String estadoBono;
 
     public Bono(String nombreBono, LocalDate fechaInicio, LocalDate fechaFin, Double precio) {
         this.nombreBono = nombreBono;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.precio = precio;
+        this.estadoBono = "No pagado";
     }
 
     public String getNombreBono() {
@@ -38,6 +40,10 @@ public class Bono {
 
     public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
+    }
+
+    public void setEstadoBonoPagado() {
+        this.estadoBono = "Pagado";
     }
 
     @Override

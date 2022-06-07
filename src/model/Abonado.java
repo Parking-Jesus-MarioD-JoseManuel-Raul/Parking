@@ -67,6 +67,11 @@ public class Abonado extends Cliente {
         Abonado.datosEstacionamiento = datosEstacionamiento;
     }
 
+
+    public void setEstadoBonoPagado() {
+        bono.setEstadoBonoPagado();
+    }
+
     @Override
     public String toString() {
         return "Abonado{" + "bono=" + bono + ", identificador=" + identificador + ", matricula='" + matricula + '\'' + ", payMethod='" + payMethod + '\'' + '}';

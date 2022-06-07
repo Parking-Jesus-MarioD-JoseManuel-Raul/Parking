@@ -4,6 +4,7 @@ import model.Abonado;
 import model.Bono;
 import model.Cliente;
 import model.Estacionamiento;
+import objectMother.AbonadoOM;
 import objectMother.ClienteOM;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -36,8 +37,6 @@ public class AbonadoRepositoryIMPLTest {
         Abonado spectedAbonado = new Abonado(cliente.getIdentificador(), cliente.getMatricula(), cliente.getPayMethod(), bono, estacionamiento);
         Abonado abonadoResultado = abonadoRepositoryIMPL.comprarBono(cliente, "Diario");
         Assertions.assertEquals(spectedAbonado, abonadoResultado);
-
-
     }
 
     /**
@@ -45,15 +44,14 @@ public class AbonadoRepositoryIMPLTest {
      */
     @Test
     public void testPagarBono() {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: getAbonados(String bono)
-     */
-    @Test
-    public void testGetAbonados() {
-//TODO: Test goes here... 
+        ArrayList<Abonado> clientesAbonados = AbonadoOM.getListaAbonados();
+        Abonado clienteAbonado = clientesAbonados.get(0);
+        Estacionamiento estacionamiento = new Estacionamiento(LocalDateTime.now(), clienteAbonado.getMatricula());
+        Bono bono = new Bono("Diario", LocalDate.now(), LocalDate.now().plusDays(1), 15.00);
+        bono.setEstadoBonoPagado();
+        Abonado spectedAbonado = new Abonado(clienteAbonado.getIdentificador(), clienteAbonado.getMatricula(), clienteAbonado.getPayMethod(), bono, estacionamiento);
+        Abonado resultadoAbonado = abonadoRepositoryIMPL.comprarBono(clienteAbonado, "Diario");
+//TODO: Test goes here...
     }
 
     /**
