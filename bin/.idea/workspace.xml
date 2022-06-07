@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba6ceb2-8440-4d1a-99de-c41e9e46604c" name="Changes" comment="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
+    <list default="true" id="fba6ceb2-8440-4d1a-99de-c41e9e46604c" name="Changes" comment="Correcion de naming &quot;testGetClientes&quot; del ClienteRepositoryIMPLTest.java">
+      <change beforePath="$PROJECT_DIR$/src/model/Abonado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Abonado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Bono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Bono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectMother/ClienteOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectMother/ClienteOM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AbonadoRepositoryIMPLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AbonadoRepositoryIMPLTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,11 +98,13 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/Programacion/Parking2/tests&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programacion/Parking2/src/objectMother&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;D:/Programacion/Parking2/src/objectMother&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -107,6 +114,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="repositories.ClienteRpository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programacion\Parking2\bin\objectMother" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="tests" />
@@ -123,7 +133,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AbonadoRepositoryIMPLTest.testComprarBono">
+    <configuration name="AbonadoRepositoryIMPLTest.testComprarBono" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Parking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AbonadoRepositoryIMPLTest" />
+      <option name="METHOD_NAME" value="testComprarBono" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SocioRepositoryIMPLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Parking" />
       <extension name="coverage">
@@ -141,6 +167,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AbonadoRepositoryIMPLTest.testComprarBono" />
         <item itemvalue="JUnit.SocioRepositoryIMPLTest" />
       </list>
     </recent_temporary>
@@ -329,7 +356,42 @@
       <option name="project" value="LOCAL" />
       <updated>1654262811247</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)">
+      <created>1654264276776</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1654264276776</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;bin/.gitignore&#10;#&#9;bin/controllers/ClienteController.class&#10;#&#9;bin/controllers/GenerarEstacionamientoController.class&#10;#&#9;bin/controllers/IdentifyByMatriculaController.class&#10;#&#9;bin/controllersIMPL/ClienteControllerIMPL.class&#10;#&#9;bin/controllersIMPL/GenerarEstacionamientoControllerIMPL.class&#10;#&#9;bin/controllersIMPL/IdentifyByMatriculaIMPL.class&#10;#&#9;bin/model/Abonado.class&#10;#&#9;bin/model/Bono.class&#10;#&#9;bin/model/Cliente.class&#10;#&#9;bin/model/Estacionamiento.class&#10;#&#9;bin/model/EstacionamientoFinalizado.class&#10;#&#9;bin/model/Identificador.class&#10;#&#9;bin/model/Plaza.class&#10;#&#9;bin/model/Socio.class&#10;#&#9;bin/objectMother/AbonadoOM.class&#10;#&#9;bin/objectMother/ClienteOM.class&#10;#&#9;bin/objectMother/EsporadicoOM.class&#10;#&#9;bin/objectMother/EstacionamientoOM.class&#10;#&#9;bin/objectMother/PlazaOM.class&#10;#&#9;bin/objectMother/SocioOM.class&#10;#&#9;bin/repositories/AbonadoRepository.class&#10;#&#9;bin/repositories/ClienteRpository.class&#10;#&#9;bin/repositories/EstacionamientosRepository.class&#10;#&#9;bin/repositories/PlazaRepository.class&#10;#&#9;bin/repositories/SocioRepository.class&#10;#&#9;bin/repositoriesIMPL/AbonadoRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/ClienteRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/PlazaRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/SocioRepositoryIMPL.class&#10;#&#9;bin/tests/AbonadoRepositoryIMPLTest.class&#10;#&#9;bin/tests/ClienteRepositoryIMPLTest.class&#10;#&#9;bin/tests/PlazaRepositoryIMPLTest.class&#10;#&#9;bin/tests/SocioRepositoryIMPLTest.class&#10;#&#9;bin/vista/a.class">
+      <created>1654264425779</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1654264425779</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;bin/.gitignore&#10;#&#9;bin/controllers/ClienteController.class&#10;#&#9;bin/controllers/GenerarEstacionamientoController.class&#10;#&#9;bin/controllers/IdentifyByMatriculaController.class&#10;#&#9;bin/controllersIMPL/ClienteControllerIMPL.class&#10;#&#9;bin/controllersIMPL/GenerarEstacionamientoControllerIMPL.class&#10;#&#9;bin/controllersIMPL/IdentifyByMatriculaIMPL.class&#10;#&#9;bin/model/Abonado.class&#10;#&#9;bin/model/Bono.class&#10;#&#9;bin/model/Cliente.class&#10;#&#9;bin/model/Estacionamiento.class&#10;#&#9;bin/model/EstacionamientoFinalizado.class&#10;#&#9;bin/model/Identificador.class&#10;#&#9;bin/model/Plaza.class&#10;#&#9;bin/model/Socio.class&#10;#&#9;bin/objectMother/AbonadoOM.class&#10;#&#9;bin/objectMother/ClienteOM.class&#10;#&#9;bin/objectMother/EsporadicoOM.class&#10;#&#9;bin/objectMother/EstacionamientoOM.class&#10;#&#9;bin/objectMother/PlazaOM.class&#10;#&#9;bin/objectMother/SocioOM.class&#10;#&#9;bin/repositories/AbonadoRepository.class&#10;#&#9;bin/repositories/ClienteRpository.class&#10;#&#9;bin/repositories/EstacionamientosRepository.class&#10;#&#9;bin/repositories/PlazaRepository.class&#10;#&#9;bin/repositories/SocioRepository.class&#10;#&#9;bin/repositoriesIMPL/AbonadoRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/ClienteRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/PlazaRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/SocioRepositoryIMPL.class&#10;#&#9;bin/tests/AbonadoRepositoryIMPLTest.class&#10;#&#9;bin/tests/ClienteRepositoryIMPLTest.class&#10;#&#9;bin/tests/PlazaRepositoryIMPLTest.class&#10;#&#9;bin/tests/SocioRepositoryIMPLTest.class&#10;#&#9;bin/vista/a.class">
+      <created>1654264440839</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1654264440839</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Correcion de naming &quot;testGetClientes&quot; del ClienteRepositoryIMPLTest.java">
+      <created>1654266296762</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1654266296762</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Correcion de naming &quot;testGetClientes&quot; del ClienteRepositoryIMPLTest.java">
+      <created>1654266531460</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1654266531460</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,7 +473,9 @@
     <MESSAGE value="Correccion Variables de tiempo" />
     <MESSAGE value="EstacionamientoRepositoryIMPL" />
     <MESSAGE value="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plaza y Abonado controllers y sus COntrollers IMPL (Tambien sus ObjectMother)" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;bin/.gitignore&#10;#&#9;bin/controllers/ClienteController.class&#10;#&#9;bin/controllers/GenerarEstacionamientoController.class&#10;#&#9;bin/controllers/IdentifyByMatriculaController.class&#10;#&#9;bin/controllersIMPL/ClienteControllerIMPL.class&#10;#&#9;bin/controllersIMPL/GenerarEstacionamientoControllerIMPL.class&#10;#&#9;bin/controllersIMPL/IdentifyByMatriculaIMPL.class&#10;#&#9;bin/model/Abonado.class&#10;#&#9;bin/model/Bono.class&#10;#&#9;bin/model/Cliente.class&#10;#&#9;bin/model/Estacionamiento.class&#10;#&#9;bin/model/EstacionamientoFinalizado.class&#10;#&#9;bin/model/Identificador.class&#10;#&#9;bin/model/Plaza.class&#10;#&#9;bin/model/Socio.class&#10;#&#9;bin/objectMother/AbonadoOM.class&#10;#&#9;bin/objectMother/ClienteOM.class&#10;#&#9;bin/objectMother/EsporadicoOM.class&#10;#&#9;bin/objectMother/EstacionamientoOM.class&#10;#&#9;bin/objectMother/PlazaOM.class&#10;#&#9;bin/objectMother/SocioOM.class&#10;#&#9;bin/repositories/AbonadoRepository.class&#10;#&#9;bin/repositories/ClienteRpository.class&#10;#&#9;bin/repositories/EstacionamientosRepository.class&#10;#&#9;bin/repositories/PlazaRepository.class&#10;#&#9;bin/repositories/SocioRepository.class&#10;#&#9;bin/repositoriesIMPL/AbonadoRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/ClienteRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/PlazaRepositoryIMPL.class&#10;#&#9;bin/repositoriesIMPL/SocioRepositoryIMPL.class&#10;#&#9;bin/tests/AbonadoRepositoryIMPLTest.class&#10;#&#9;bin/tests/ClienteRepositoryIMPLTest.class&#10;#&#9;bin/tests/PlazaRepositoryIMPLTest.class&#10;#&#9;bin/tests/SocioRepositoryIMPLTest.class&#10;#&#9;bin/vista/a.class" />
+    <MESSAGE value="Correcion de naming &quot;testGetClientes&quot; del ClienteRepositoryIMPLTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcion de naming &quot;testGetClientes&quot; del ClienteRepositoryIMPLTest.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

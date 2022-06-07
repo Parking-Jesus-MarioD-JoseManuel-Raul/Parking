@@ -1,6 +1,17 @@
 package tests;
 
+import model.Abonado;
+import model.Bono;
+import model.Cliente;
+import model.Estacionamiento;
+import objectMother.ClienteOM;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import repositoriesIMPL.AbonadoRepositoryIMPL;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 /**
  * AbonadoRepositoryIMPL Tester.
@@ -10,14 +21,23 @@ import org.junit.Test;
  * @since <pre>jun. 1, 2022</pre>
  */
 public class AbonadoRepositoryIMPLTest {
-
+    AbonadoRepositoryIMPL abonadoRepositoryIMPL = new AbonadoRepositoryIMPL();
 
     /**
      * Method: comprarBono(Cliente cliente, String bono)
      */
     @Test
     public void testComprarBono() {
-//TODO: Test goes here... 
+        ArrayList<Cliente> clientes = ClienteOM.getClientes();
+        Cliente cliente = clientes.get(0);
+        Estacionamiento estacionamiento = new Estacionamiento(LocalDateTime.now(), cliente.getMatricula());
+        Bono bono = new Bono("Diario", LocalDate.now(), LocalDate.now().plusDays(1), 15.00);
+
+        Abonado spectedAbonado = new Abonado(cliente.getIdentificador(), cliente.getMatricula(), cliente.getPayMethod(), bono, estacionamiento);
+        Abonado abonadoResultado = abonadoRepositoryIMPL.comprarBono(cliente, "Diario");
+        Assertions.assertEquals(spectedAbonado, abonadoResultado);
+
+
     }
 
     /**

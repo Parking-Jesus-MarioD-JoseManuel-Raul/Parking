@@ -1,14 +1,15 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Bono {
     private String nombreBono;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
-    private float precio;
+    private Double precio;
 
-    public Bono(String nombreBono, LocalDate fechaInicio, LocalDate fechaFin, float precio) {
+    public Bono(String nombreBono, LocalDate fechaInicio, LocalDate fechaFin, Double precio) {
         this.nombreBono = nombreBono;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -37,5 +38,23 @@ public class Bono {
 
     public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
+    }
+
+    @Override
+    public String toString() {
+        return "Bono{" + "nombreBono='" + nombreBono + '\'' + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", precio=" + precio + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Bono)) return false;
+        Bono bono = (Bono) o;
+        return Objects.equals(nombreBono, bono.nombreBono) && Objects.equals(fechaInicio, bono.fechaInicio) && Objects.equals(fechaFin, bono.fechaFin) && Objects.equals(precio, bono.precio);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombreBono, fechaInicio, fechaFin, precio);
     }
 }
