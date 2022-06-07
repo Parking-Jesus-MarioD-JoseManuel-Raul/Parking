@@ -3,16 +3,19 @@ package tests;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.junit.Test;
 
 import model.Cliente;
+import model.Estacionamiento;
 import model.Identificador;
 import objectMother.AbonadoOM;
 import objectMother.ClienteOM;
 import objectMother.SocioOM;
 import repositoriesIMPL.ClienteRepositoryIMPL;
+import model.Estacionamiento;
 
 /**
  * ClienteRepositoryIMPL Tester.
@@ -38,7 +41,7 @@ public class ClienteRepositoryIMPLTest {
     	List<Cliente> result2 = clientes.getClientes("Bono_Socio");
     	assertNotEquals(spected2, result2 );
     	
-    	List<Cliente> spected3 = AbonadoOM.getAbonadoss();
+    	List<Cliente> spected3 = AbonadoOM.getAbonados();
     	List<Cliente> result3 = clientes.getClientes("Plastico");
     	assertEquals(spected3, result3 );
     	
@@ -68,7 +71,15 @@ public class ClienteRepositoryIMPLTest {
      */
     @Test
     public void testGenrarEstacionamiento() {
-
+    	ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
+    	
+    	Estacionamiento spected = new Estacionamiento(LocalDateTime.now(), "124HYT");
+    	Estacionamiento result = clientes.generarEstacionamiento("124HYT");
+    	assertEquals(spected, result);
+    	
+    	Estacionamiento spected2 = new Estacionamiento(LocalDateTime.now(), "124HYT");
+    	Estacionamiento result2 = clientes.generarEstacionamiento("987MTS");
+    	assertNotEquals(spected2, result2);
     }
 
     /**
