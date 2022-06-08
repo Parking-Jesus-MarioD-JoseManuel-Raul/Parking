@@ -33,7 +33,7 @@ public interface ClienteRpository {
      * @return Obejto de tipo Socio culla matricula coincida con la intorucida por parametro;
      */
 
-    public Cliente IdentifyByMatricula(String matricula);
+    public Boolean IdentifyByMatricula(String matricula);
 
     
     
