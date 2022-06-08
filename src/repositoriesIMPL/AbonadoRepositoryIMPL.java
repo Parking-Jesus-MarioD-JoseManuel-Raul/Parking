@@ -26,6 +26,7 @@ public class AbonadoRepositoryIMPL implements AbonadoRepository {
             }
             break;
         }
+        assert clienteAbonado != null;
         pagarBono(clienteAbonado.getPayMethod(), clienteAbonado.getBono());
         return clienteAbonado;
     }

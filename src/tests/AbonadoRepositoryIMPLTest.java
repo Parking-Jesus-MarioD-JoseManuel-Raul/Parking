@@ -7,12 +7,13 @@ import model.Estacionamiento;
 import objectMother.AbonadoOM;
 import objectMother.ClienteOM;
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import repositoriesIMPL.AbonadoRepositoryIMPL;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * AbonadoRepositoryIMPL Tester.
@@ -36,7 +37,7 @@ public class AbonadoRepositoryIMPLTest {
 
         Abonado spectedAbonado = new Abonado(cliente.getIdentificador(), cliente.getMatricula(), cliente.getPayMethod(), bono, estacionamiento);
         Abonado abonadoResultado = abonadoRepositoryIMPL.comprarBono(cliente, "Diario");
-        Assertions.assertEquals(spectedAbonado, abonadoResultado);
+        assertEquals(spectedAbonado, abonadoResultado);
     }
 
     /**
@@ -51,6 +52,7 @@ public class AbonadoRepositoryIMPLTest {
         bono.setEstadoBonoPagado();
         Abonado spectedAbonado = new Abonado(clienteAbonado.getIdentificador(), clienteAbonado.getMatricula(), clienteAbonado.getPayMethod(), bono, estacionamiento);
         Abonado resultadoAbonado = abonadoRepositoryIMPL.comprarBono(clienteAbonado, "Diario");
+        assertEquals(spectedAbonado, resultadoAbonado);
     }
 
     /**
