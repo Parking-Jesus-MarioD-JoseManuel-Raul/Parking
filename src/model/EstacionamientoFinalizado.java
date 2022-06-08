@@ -16,8 +16,8 @@ public class EstacionamientoFinalizado {
         return datosEstacionamiento.getStatusEstacionamiento();
     }
 
-    public void setStatusEstacionamiento(boolean statusEstacionamiento) {
-        datosEstacionamiento.setStatusEstacionamiento(statusEstacionamiento);
+    public void setStatusEstacionamiento() {
+        datosEstacionamiento.setStatusEstacionamiento(false);
     }
 
     public LocalDateTime getHoraEntrada() {
