@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Cliente {
     Identificador identificador;
     String matricula;
@@ -39,4 +41,24 @@ public class Cliente {
     public String toString() {
         return "identificador=" + identificador + ", matricula='" + matricula + '\'' + ", payMethod='" + payMethod;
     }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(identificador, matricula, payMethod);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return identificador == other.identificador && Objects.equals(matricula, other.matricula)
+				&& Objects.equals(payMethod, other.payMethod);
+	}
+    
+    
 }

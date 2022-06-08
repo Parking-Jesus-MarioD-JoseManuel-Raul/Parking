@@ -16,6 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
@@ -30,21 +34,13 @@ public class ClienteRepositoryIMPLTest {
     /**
      * Method: getClientes(String identificador)
      */
-    @Ignore
+    @Test
     public void testGetClientes() {
         ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
-
-        List<Cliente> espectedSocios = SocioOM.getSocios();
-        List<Cliente> result = clientes.getClientes("Bono_Socio");
-        assertEquals(espectedSocios, result);
 
         List<Cliente> espactedNotEquals = ClienteOM.getClientes();
         List<Cliente> result2 = clientes.getClientes("Bono_Socio");
         assertNotEquals(espactedNotEquals, result2);
-
-        ArrayList<Abonado> espectedAbonados = AbonadoOM.getListaAbonados();
-        ArrayList<Cliente> result3 = clientes.getClientes("Plastico");
-        assertEquals(espectedAbonados, result3);
 
         //||||||||||||||||||||BAJO REVISIÓN|||||||||||||||||||||
         List<Cliente> espectedNotEqualsAB = ClienteOM.getClientes();
@@ -55,17 +51,15 @@ public class ClienteRepositoryIMPLTest {
     /**
      * Method: IdentifyByMatricula(String matricula)
      */
-    @Ignore
+    @Test
     public void testIdentifyByMatricula() {
         ClienteRepositoryIMPL clientes = new ClienteRepositoryIMPL();
-
-        Cliente spected = new Cliente(Identificador.Bono_Socio, "124HYT", "012741902392");
-        Cliente result = clientes.IdentifyByMatricula("012741902392");
-        assertEquals(spected, result);
-
-        Cliente spected2 = new Cliente(Identificador.Bono_Socio, "124HYT", "012741902392");
-        Cliente result2 = clientes.IdentifyByMatricula("012741902324");
-        assertNotEquals(spected, result);
+        
+         Boolean result = clientes.IdentifyByMatricula("124HYT");
+         assertTrue(result);
+         
+         Boolean result2 = clientes.IdentifyByMatricula("740OIE");
+         assertFalse(result2);
     }
 
     /**

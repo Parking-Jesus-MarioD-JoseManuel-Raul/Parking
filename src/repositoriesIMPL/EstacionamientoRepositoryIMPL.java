@@ -8,7 +8,7 @@ import objectMother.EstacionamientoOM;
 import repositories.EstacionamientosRepository;
 
 public class EstacionamientoRepositoryIMPL implements EstacionamientosRepository{
-	ArrayList <Estacionamiento> listaDeEstacionamiento = EstacionamientoOM.getEstacionamiento();
+	static ArrayList <Estacionamiento> listaDeEstacionamiento = EstacionamientoOM.getEstacionamiento();
 	ArrayList <EstacionamientoFinalizado> listaDeEstacionamientoFinalizado = EstacionamientoOM.getEstacionamientosFinalizados();
 	@Override
 	public ArrayList<Estacionamiento> getEstacionamientosOperativos() {
