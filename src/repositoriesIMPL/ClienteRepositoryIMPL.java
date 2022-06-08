@@ -6,9 +6,7 @@ import model.EstacionamientoFinalizado;
 import model.Identificador;
 import objectMother.ClienteOM;
 import repositories.ClienteRpository;
-import repositories.EstacionamientosRepository;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,24 +29,23 @@ public class ClienteRepositoryIMPL implements ClienteRpository {
 
 	@Override
 	public Boolean IdentifyByMatricula(String matricula) {
-		Boolean bandera = false;
+		boolean bandera = false;
 		for (Cliente cliente : clientes) {
 			if (cliente.getMatricula().equals(matricula)) {
 				bandera = true;
 				return bandera;
 			}
 		}
-		if (bandera==false) {
+		if (bandera) {
 			EstacionamientoRepositoryIMPL.listaDeEstacionamiento.add(generarEstacionamiento(matricula));
-			
+
 		}
 		return bandera;
 	}
 
 	@Override
 	public Estacionamiento generarEstacionamiento(String matricula) {
-		Estacionamiento newEstacionamiento = new Estacionamiento(LocalDateTime.now(), matricula);
-		return newEstacionamiento;
+		return new Estacionamiento(LocalDateTime.now(), matricula);
 	}
 
 	@Override
