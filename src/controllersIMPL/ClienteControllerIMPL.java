@@ -1,7 +1,6 @@
 package controllersIMPL;
 
 import controllers.ClienteController;
-import model.Cliente;
 import model.Estacionamiento;
 import model.EstacionamientoFinalizado;
 import repositories.ClienteRpository;
@@ -10,7 +9,7 @@ public class ClienteControllerIMPL implements ClienteController {
     ClienteRpository clienteRpository;
 
     @Override
-    public Cliente IdentifyByMatricula(String matricula) {
+    public Boolean IdentifyByMatricula(String matricula) {
         return clienteRpository.IdentifyByMatricula(matricula);
     }
 
