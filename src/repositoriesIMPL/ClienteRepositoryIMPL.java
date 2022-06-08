@@ -6,6 +6,8 @@ import model.EstacionamientoFinalizado;
 import model.Identificador;
 import objectMother.ClienteOM;
 import repositories.ClienteRpository;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,8 +40,8 @@ public class ClienteRepositoryIMPL implements ClienteRpository {
 
     @Override
     public Estacionamiento generarEstacionamiento(String matricula) {
-    	
-        return null;
+    	Estacionamiento newEstacionamiento = new Estacionamiento(LocalDateTime.now(), matricula);
+        return newEstacionamiento;
     }
 
     @Override
