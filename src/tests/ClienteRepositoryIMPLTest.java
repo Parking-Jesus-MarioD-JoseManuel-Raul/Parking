@@ -1,25 +1,15 @@
 package tests;
 
-import model.Abonado;
 import model.Cliente;
 import model.Estacionamiento;
-import model.Identificador;
-import objectMother.AbonadoOM;
 import objectMother.ClienteOM;
-import objectMother.SocioOM;
-import org.junit.Ignore;
 import org.junit.Test;
 import repositoriesIMPL.ClienteRepositoryIMPL;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
