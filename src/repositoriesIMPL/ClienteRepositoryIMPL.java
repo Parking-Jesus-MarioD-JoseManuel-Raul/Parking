@@ -27,11 +27,18 @@ public class ClienteRepositoryIMPL implements ClienteRpository {
 
     @Override
     public Cliente IdentifyByMatricula(String matricula) {
-        return null;
+    	Cliente clienteBuscado = null;
+    	for (Cliente cliente : clientes) {
+			if(cliente.getMatricula().equals(matricula)) {
+				clienteBuscado = cliente;
+			}
+		}
+        return clienteBuscado;
     }
 
     @Override
     public Estacionamiento generarEstacionamiento(String matricula) {
+    	
         return null;
     }
 
