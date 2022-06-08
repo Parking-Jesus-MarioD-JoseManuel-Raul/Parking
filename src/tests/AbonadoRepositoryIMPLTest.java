@@ -51,7 +51,6 @@ public class AbonadoRepositoryIMPLTest {
         bono.setEstadoBonoPagado();
         Abonado spectedAbonado = new Abonado(clienteAbonado.getIdentificador(), clienteAbonado.getMatricula(), clienteAbonado.getPayMethod(), bono, estacionamiento);
         Abonado resultadoAbonado = abonadoRepositoryIMPL.comprarBono(clienteAbonado, "Diario");
-//TODO: Test goes here...
     }
 
     /**
