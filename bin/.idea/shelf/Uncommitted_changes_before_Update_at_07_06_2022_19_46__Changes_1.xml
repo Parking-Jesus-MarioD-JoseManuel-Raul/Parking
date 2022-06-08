@@ -1,0 +1,34 @@
+<changelist name="Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1" date="1654624017105" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 07/06/2022 19:46 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="bin/objectMother/SocioOM.class" />
+    <option name="AFTER_PATH" value="bin/objectMother/SocioOM.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/SocioOM.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bin/model/Bono.class" />
+    <option name="AFTER_PATH" value="bin/model/Bono.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/Bono.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bin/tests/AbonadoRepositoryIMPLTest.class" />
+    <option name="AFTER_PATH" value="bin/tests/AbonadoRepositoryIMPLTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/AbonadoRepositoryIMPLTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bin/repositoriesIMPL/AbonadoRepositoryIMPL.class" />
+    <option name="AFTER_PATH" value="bin/repositoriesIMPL/AbonadoRepositoryIMPL.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/AbonadoRepositoryIMPL.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bin/tests/SocioRepositoryIMPLTest.class" />
+    <option name="AFTER_PATH" value="bin/tests/SocioRepositoryIMPLTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/SocioRepositoryIMPLTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bin/model/Abonado.class" />
+    <option name="AFTER_PATH" value="bin/model/Abonado.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_46_[Changes]1/Abonado.class" />
+  </binary>
+</changelist>
